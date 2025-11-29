@@ -49,3 +49,10 @@ def get_predicted_value(patient_symptoms):
     for item in patient_symptoms:
         input_vector[symptoms_dict[item]] = 1
     return diseases_list[svc.predict([input_vector])[0]]
+
+
+    
+# creating routes========================================
+@app.route("/")
+def index():
+    return render_template("index.html")
