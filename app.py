@@ -86,3 +86,8 @@ def home():
                                    workout=workout)
 
     return render_template('index.html')
+
+# about view funtion and path
+@app.route('/about')
+def about():
+    return render_template("about.html")
