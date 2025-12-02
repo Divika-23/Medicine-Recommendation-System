@@ -102,3 +102,8 @@ def contact():
 def developer():
     return render_template("developer.html")
 
+# about view funtion and path
+@app.route('/blog')
+def blog():
+    return render_template("blog.html")
+
